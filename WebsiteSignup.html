@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="WebsiteSignup.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <div class="signup">
+        <h1>SIGN UP</h1>
+        <form id="signupForm" action="#" onsubmit="submitForm()">
+            <label for="1stname">First Name / Given Name</label>
+            <input type="text" placeholder="Enter First Name" name="1stname" required>
+            <label for="lastname">Last Name / Family Name</label>
+            <input type="text" placeholder="Enter Last name" name="lastname" required>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter Email" name="email" required>
+            <label for="pasw">Password</label>
+            <input type="password" placeholder="Enter password" name="password" required>
+            <label for="repeatpassword">Confirm Password</label>
+            <input type="password" placeholder="Confirm password" name="password2" required>
+            <div class="clear">
+                <input type="submit" value="Submit" class="Submit">
+            </div>
+        </form>
+    </div>
+    <p>Already have an account? <a href="WebsiteSignin.html">Sign in here</a></p>
+    <a class="butt" href="Jacob_Website.html">Go back</a>
+
+    <script>
+        function submitForm() {
+            alert('Form submitted successfully!');
+            return false; 
+        }
+    </script>
+</body>
+</html>
